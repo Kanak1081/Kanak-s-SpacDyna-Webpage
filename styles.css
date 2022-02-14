@@ -1,0 +1,597 @@
+/*Kanak's CSS Styles starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:Arial, Helvetica, sans-serif
+}
+/* NAVBAR STYLES Starts*/
+.ctn{
+    padding: 8px 15px;
+    background: #fe3e42;
+    border-radius: 30px;
+    color: white;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+    font-weight: 600;
+}
+.active{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* Mobile*/
+@media only screen and (max-width:600px){
+    .menu-btn{
+        display: block;
+        position: absolute;
+        margin-top: -1%;
+    }
+    .navbar{
+        padding: 0;   
+        overflow-y: hidden;  
+    }
+    .logo{
+        position: absolute;
+       margin: 4%;
+       color: whitesmoke;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        margin-top: -89vh;
+        background: #484872;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .ctn{
+        display: none;
+    }
+}
+@media only screen and (max-width:800px){
+    .menu-btn{
+        display: block;
+        position: absolute;
+        margin-top: -1%;
+    }
+    .navbar{
+        padding: 0;   
+        overflow-y: hidden;  
+    }
+    .logo{
+        position: absolute;
+       margin: 4%;
+       color: whitesmoke;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        margin-top: -89vh;
+        background: #484872;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .ctn{
+        display: none;
+    }
+}
+
+
+/*NAVBAR STYLES ends */
+/* Third Section styles */
+
+/*media queries */
+
+@media only screen and (max-width:600px){
+    #thirdSectionParent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 10% 5% 15% 5%;
+    }
+    .thirdSectionSpace{
+        flex-grow: 1;
+    }
+    #thirdSectionImage{
+        flex-grow: 1;
+        height: 30vh;
+        width: 60vw;    
+        margin-top: 6%;
+    }
+    #thirdSectionContent{
+        flex-grow: 1;
+        margin-top: 5%;
+    }
+    #thirdSectionContent h2{
+        text-align: center;
+    }
+    #thirdSectionContent p{
+        color: black;
+        margin-top: 4%;
+        text-align: center;
+    }
+    #thirdSectionContent .thirdSectionContainer{
+        background-color: #ddd;
+        border-radius: 20px;
+    }
+    #templateText{
+        margin-bottom: 7%;
+    }
+    .skills {
+        text-align: right;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: white;  
+    }
+      
+    .js {width: 84%; background-image: linear-gradient(to right, #fe472d , #ff3162); border-radius: 20px;}
+    .reports{width: 88%; background-image: linear-gradient(to right, #fe472d , #ff3162);border-radius: 20px;}
+    .optimizations{width: 94%;background-image: linear-gradient(#fe472d , #ff3162);border-radius: 20px;}
+    .description{
+        margin-top: 3%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-direction: row;
+    }
+    .deshead{
+        flex-grow: 1;
+        font-weight: 700;
+    }
+    .desspace1{
+        flex-grow: 3;
+    }
+    .desspace2{
+        flex-grow: 5;
+    }
+    .desspace3{
+        flex-grow: 9;
+    }
+    .percent{
+        flex-grow: 1;
+        color: #24a0ed;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width:800px){
+    #thirdSectionParent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 10% 5% 15% 5%;
+    }
+    .thirdSectionSpace{
+        flex-grow: 1;
+    }
+    #thirdSectionImage{
+        flex-grow: 1;
+        height: 30vh;
+        width: 40vw;    
+        margin-top: 6%;
+    }
+    #thirdSectionContent{
+        flex-grow: 1;
+        margin-top: 5%;
+    }
+    #thirdSectionContent h2{
+        text-align: center;
+    }
+    #thirdSectionContent p{
+        color: black;
+        margin-top: 4%;
+        text-align: center;
+    }
+    #thirdSectionContent .thirdSectionContainer{
+        background-color: #ddd;
+        border-radius: 20px;
+    }
+    #templateText{
+        margin-bottom: 7%;
+    }
+    .skills {
+        text-align: right;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: white;  
+    }
+      
+    .js {width: 84%; background-image: linear-gradient(to right, #fe472d , #ff3162); border-radius: 20px;}
+    .reports{width: 88%; background-image: linear-gradient(to right, #fe472d , #ff3162);border-radius: 20px;}
+    .optimizations{width: 94%;background-image: linear-gradient(#fe472d , #ff3162);border-radius: 20px;}
+    .description{
+        margin-top: 3%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-direction: row;
+    }
+    .deshead{
+        flex-grow: 1;
+        font-weight: 700;
+    }
+    .desspace1{
+        flex-grow: 3;
+    }
+    .desspace2{
+        flex-grow: 5;
+    }
+    .desspace3{
+        flex-grow: 9;
+    }
+    .percent{
+        flex-grow: 1;
+        color: #24a0ed;
+        font-weight: 600;
+    }
+}
+@media only screen and (min-width:600px){}
+@media only screen and (min-width:768px){}
+@media only screen and (min-width:992px){}
+@media only screen and (min-width:1200px){
+    #thirdSectionParent{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10%;
+    }
+    .thirdSectionSpace{
+        flex-grow: 1;
+    }
+    #thirdSectionImage{
+        flex-grow: 1;
+        height: 32vh;    
+        margin-top: 5%;
+    }
+    #thirdSectionContent{
+        flex-grow: 1;
+    }
+    #thirdSectionContent p{
+        color: black;
+        margin-top: 4%;
+    }
+    #thirdSectionContent .thirdSectionContainer{
+        background-color: #ddd;
+        border-radius: 20px;
+    }
+    #templateText{
+        margin-bottom: 7%;
+    }
+    .skills {
+        text-align: right;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: white;  
+    }
+      
+    .js {width: 84%; background-image: linear-gradient(to right, #fe472d , #ff3162);border-radius: 20px;}
+    .reports{width: 88%; background-image: linear-gradient(to right, #fe472d , #ff3162);border-radius: 20px;}
+    .optimizations{width: 94%; background-image: linear-gradient(to right, #fe472d , #ff3162);border-radius: 20px;}
+    .description{
+        margin-top: 3%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-direction: row;
+    }
+    .deshead{
+        flex-grow: 1;
+        font-weight: 700;
+    }
+    .desspace1{
+        flex-grow: 3;
+    }
+    .desspace2{
+        flex-grow: 5;
+    }
+    .desspace3{
+        flex-grow: 9;
+    }
+    .percent{
+        flex-grow: 1;
+        color: #24a0ed;
+        font-weight: 600;
+    }
+}
+
+
+
+
+/*media queries */
+
+/* Third Section styles ends here */
+
+
+
+/*Fourth section styles*/
+
+#fourthSectionGrandparent{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+#fourthSectionFirstRow{
+    text-align: center;
+}
+#fourthSectionFirstRow #text h2{
+    color: black;
+}
+#fourthSectionSecondRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+#firstColumn,#secondColumn, #thirdColumn, #fourthColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.firstColumnSpace, .thirdColumnSpace, .fourthColumnSpace{
+    flex-grow: 1;
+}
+#firstColumnImage, #thirdColumnImage, #fourthColumnImage{
+    flex-grow: 1;
+}
+#secondColumnText h3,p{
+    color: white;
+}
+#secondColumnText{
+    background-image: linear-gradient(to right, #fe472d , #ff3162);
+    flex-grow: 1;
+    margin-bottom: 3%;
+    padding: 7%;
+    border-radius: 15px;
+    text-align: center;
+}
+#secondColumnText p{
+    margin-top: 10%;
+    color: white;
+    font-size: 15px;
+}
+#secondColumnImage{
+    flex-grow: 1;
+}
+
+/*Fourth section styles ends here */
+
+/*FOOTER */
+footer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./static/images/contact-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#FlexParent{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;  
+}
+.space{flex-grow: 1;}
+#text{
+    flex-grow: 1;
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+#formcontainer{
+    flex-grow: 2;
+}
+#text h2{
+    color: white;
+}
+#text p{
+    color: white;
+    margin-top: 5%;
+}
+#text h3{
+    color: white;
+    margin-top: 10%;
+}
+.container {
+  max-width: 500px;
+  padding: 10% 5% 5% 5%;
+  background-color: white;
+  border-radius: 30px;
+}
+/* Full-width input fields */
+.row{
+    display: flex;
+}
+#name1{
+   flex-grow: 1;
+   width: 30%;
+   padding: 15px;
+   margin-right: 2%;
+   margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    background: #d5edfb;
+}
+#name2{
+    flex-grow: 1;
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    background: #d5edfb;
+}
+#email {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-radius: 20px;
+    background: #d5edfb;
+}
+textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-radius: 20px;
+    background: #d5edfb;
+}
+/* Set a style for the submit button */
+.btn {
+  background-color: #07a3ed;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+  border-radius: 30px;
+}
+@media only screen and (max-width:600px){
+    #FlexParent{
+        display: flex;
+        width: 100%;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5% 5% 5%;
+    }
+    .container {
+        max-width: 350px;
+        padding: 10% 5% 5% 5%;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #text{
+        flex-grow: 1;
+        padding-top: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    #text h2{
+        color: white;
+        text-align: center;
+    }
+    #text p{
+        color: white;
+        margin-top: 2%;
+        text-align: center;
+    }
+    #text h3{
+        color: white;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:800px){
+    #FlexParent{
+        display: flex;
+        width: 100%;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5% 5% 5%;
+    }
+    .container {
+        max-width: 350px;
+        padding: 10% 5% 5% 5%;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #text{
+        flex-grow: 1;
+        padding-top: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    #text h2{
+        color: white;
+        text-align: center;
+    }
+    #text p{
+        color: white;
+        margin-top: 2%;
+        text-align: center;
+    }
+    #text h3{
+        color: white;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:1000px){
+    #FlexParent{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        width: 100%;  
+    }
+    .container {
+        max-width: 350px;
+        padding: 10% 5% 5% 5%;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #text{
+        flex-grow: 1;
+        padding-top: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*background-image: linear-gradient(to right, #fe472d , #ff3162);*/
